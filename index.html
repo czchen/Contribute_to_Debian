@@ -111,6 +111,26 @@
 					</script>
 				</section>
 
+				<section data-markdown>
+					<script type="text/template">
+						## [Debian Source Package](https://wiki.debian.org/SourcePackage#The_definition_of_a_source_package)
+						*	The upstream tarball with `.orig.tar.*` ending
+						*	A description file with `.dsc` ending.
+						*	A tarball, with any changes made to upstream source, plus all the files created for the Debian package. This has a `.debian.tar.*` ending
+							*	This will be extracted to upstream `debian` directory
+							*	Upstream tarball shall not contain `debian` directory
+					</script>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						## File inside `debian` directory
+						*	`debian/copyright`
+						*	`debian/rules`
+						*	`debian/controls`
+						*	`debian/watch`
+					</script>
+				</section>
 
 			</div>
 
